@@ -117,6 +117,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.gnss@2.1.vendor:64
+    
+PRODUCT_PACKAGES += \
+    GCamGo    
 
 # Graphics
 # Device uses high-density artwork where available
