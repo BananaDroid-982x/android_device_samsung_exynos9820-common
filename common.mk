@@ -351,6 +351,16 @@ $(warning Please include the BCMDHD SAE authentication offload patch in your bui
 PRODUCT_PACKAGES += \
     WifiOverlayNoSAE
 endif
-
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    
+# BananaStuff    
+TARGET_BOOT_ANIMATION_RES := 1440
+WITH_GAPPS := true
+BUILD_CORE_GAPPS := true
+BUILD_CORE_GAPPS_EXTRA := true   
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+PRODUCT_USE_SCUDO := true 
+TARGET_FACE_UNLOCK_SUPPORTED := true 
