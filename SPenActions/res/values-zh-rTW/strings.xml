@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2021-2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">S Pen藍芽設定</string>
+
+    <!-- Settings -->
+    <string name="settings_title">S Pen藍芽設定</string>
+
+    <string name="spen_bluetooth_enable_title">S Pen藍芽連線</string>
+    <string name="spen_bluetooth_enable_summary">透過藍芽連線S Pen以使用遠端操作</string>
+
+    <string name="spen_mode_title">S Pen模式</string>
+    <string name="spen_mode_navigation">手勢操作</string>
+    <string name="spen_mode_camera">相機控制</string>
+    <string name="spen_mode_media_control">媒體控制</string>
+
+    <string name="reset_spen">重設S Pen</string>
+</resources>
