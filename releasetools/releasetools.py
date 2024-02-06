@@ -74,6 +74,7 @@ def OTA_InstallEnd(info):
         info.script.AppendExtra('exynos9820.verify_no_downgrade("%s") == "0" &&' % version)
         info.script.AppendExtra('getprop("ro.boot.bootloader") != "%s",' % version)
         if info.info_dict.get("vendor.build.prop").GetProp("ro.board.platform") != "universal9825_r":
+          info.script.Print('Updating firmware to %s for %s' % (version, model))
           AddFirmwareImage(info, model, "sboot.bin", "/dev/block/by-name/bota0")
           AddFirmwareImage(info, model, "cm.bin", "/dev/block/by-name/bota1")
           AddFirmwareImage(info, model, "up_param.bin", "/dev/block/by-name/bota2")
