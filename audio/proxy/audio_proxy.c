@@ -5003,6 +5003,12 @@ bool proxy_set_route(void *proxy, int ausage, int device, int modifier, bool set
         routed_device = DEVICE_SPEAKER_DUAL;
 #endif
 
+#ifdef SUPPORT_QUAD_MIC_IN_CAM
+    // HACK: Force quad mic for camcorder
+    if (routed_device == DEVICE_MAIN_MIC && routed_ausage == AUSAGE_CAMCORDER)
+        routed_device = DEVICE_QUAD_MIC;
+#endif
+
     if (set) {
         /* check whether path routing is for AP/CP call bandwidth or speaker/DEX Device Change */
         if (routed_device < DEVICE_MAIN_MIC) {
